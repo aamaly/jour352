@@ -1,0 +1,267 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    max-width: 1000px;
+    width: 97%
+}
+
+body, h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 15px;
+    margin-top: 15px; 
+}
+
+.full-width-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+.full-width-images {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow-x: hidden;
+}
+
+.full-width-images img {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    object-fit:cover;
+    padding: 10px 0%;
+}
+
+.full-width-images img, .image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto
+}
+
+.outkast-box1 {
+    background-color: #11151C;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    position: relative; 
+    left: 50%; 
+    right: 50%;
+    margin-left:-50vw;
+    margin-right: -50vw;
+    margin-top: -100px;
+}
+
+.outkast-box {
+    background-color: #11151C;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    position: relative; 
+    left: 50%; 
+    right: 50%;
+    margin-left:-50vw;
+    margin-right: -50vw;
+    margin-top: 50px;
+}
+
+.outkast-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.outkast-text {
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 0.55rem;
+    text-align: left;
+}
+
+.outkast-map {
+    flex: 0 1 auto;
+}
+
+.outkast-map img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.outkast-box1 h1, .outkast-box1 h2, .outkast-box1 p{
+    color:white;
+}
+
+.outkast-box1 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.thin-small {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.outkast-box1 h2 {
+    font-size: 0.6rem;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.outkast-box1 p {
+    font-size: 1rem;
+}
+
+.outkast-item {
+    text-align: center;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.outkast-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 5px auto;
+    padding: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.image-container h4{
+    font-size: 1.8rem;
+}
+
+.image-container p { 
+    font-size: 0.55rem;
+    text-align: left;
+}
+
+.article-content {
+    text-align:left;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    color: #11151C; 
+    background-color: #FEFEFE; 
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Prompt', sans-serif;
+    color: #11151C;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+    color: #11151C;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header img,
+.chart img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.section-item {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    color: #000000; 
+    text-align: left;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+a {
+    color: #B82B26;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 97%;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .outkast-box {
+        gap: 10px;
+    }
+
+    .outkast-item {
+        min-width: 150px;
+    }
+}
