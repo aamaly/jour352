@@ -1,21 +1,18 @@
-/* General body styling */
 .body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* Light gray background to match a gallery vibe */
-    color: #000000; /* Slightly darker text for contrast */
+    background-color: #f4f4f4; 
+    color: #000000; 
     font-size: 18px;
     line-height: 1.8;
 }
 
-/* Container styling for spacing */
 .container {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for a more elegant feel */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading and text styling */
 h1 {
     color: #3e3e3e;
     font-family:'Times New Roman', Times, serif;
@@ -33,7 +30,7 @@ h4 {
 
 .carousel-caption {
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 5px;
 }
@@ -42,7 +39,7 @@ h4 {
     font-size: 1.1rem;
     font-family: 'Georgia', serif;
     font-style: italic;
-    border-left: 5px solid #8d8d8d; /* Slight gray for a soft border */
+    border-left: 5px solid #8d8d8d; 
     padding-left: 15px;
     margin: 20px 0;
     background-color: #ffffff;
@@ -56,12 +53,11 @@ h4 {
     text-align: right;
 }
 
-/* Timeline Styling */
 #timeline {
-    background-color: #fafafa; /* White background for clarity and sophistication */
+    background-color: #fafafa; 
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a professional finish */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
 .timeline {
@@ -83,30 +79,29 @@ h4 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 5px solid #fff; /* White border for clean design */
+    border: 5px solid #fff; 
 }
 
 .timeline-content {
-    background-color: #ffffff; /* Clean white background for readability */
+    background-color: #ffffff; 
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern touch */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .timeline-content h3 {
     margin-top: 0;
     font-size: 2.3rem;
-    color: #000000; /* Darker text for better contrast */
+    color: #000000; 
     font-weight: 600;
 }
 
 .timeline-content p {
     font-size: 1.2rem;
-    color: #6c757d; /* Subtle gray for paragraph text */
+    color: #6c757d; 
     line-height: 1.5;
 }
 
-/* Map Section */
 #map {
     background-color: #fff;
     padding: 30px;
@@ -134,7 +129,6 @@ h4 {
     margin-top: 10px;
 }
 
-/* Footer and copyright */
 footer {
     text-align: center;
     font-size: 0.9rem;
@@ -146,7 +140,6 @@ footer p {
     margin: 0;
 }
 
-/* Responsive design */
 @media (max-width: 786px) {
     h1 {
         font-size: 2rem;
