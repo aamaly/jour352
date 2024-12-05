@@ -1,8 +1,10 @@
 /* General body styling */
-body {
+.body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #f4f4f4; /* Light gray background to match a gallery vibe */
+    color: #000000; /* Slightly darker text for contrast */
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 /* Container styling for spacing */
@@ -10,59 +12,56 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for a more elegant feel */
 }
 
 /* Heading and text styling */
 h1 {
-    color: #4a4a4a;
+    color: #3e3e3e;
+    font-family:'Times New Roman', Times, serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.lead {
-    font-size: 1.2rem;
-    color: #555;
+h4 {
+    color: #3e3e3e;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
-blockquote {
+
+.carousel-caption {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.blockquote {
     font-size: 1.1rem;
+    font-family: 'Georgia', serif;
     font-style: italic;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid #8d8d8d; /* Slight gray for a soft border */
     padding-left: 15px;
     margin: 20px 0;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     color: #555;
 }
 
-blockquote-footer {
+.blockquote-footer {
     font-size: 1rem;
     font-weight: bold;
-    color: #007bff;
+    color: #433a3a;
     text-align: right;
-}
-
-/* Image Styling */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.first-image img {
-    width: 100%;      
-    height: auto;     
-}
-
-.w-100{
-    width: 100%;
 }
 
 /* Timeline Styling */
 #timeline {
-    background-color: #839dd7;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa; /* White background for clarity and sophistication */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for a professional finish */
 }
 
 .timeline {
@@ -72,37 +71,44 @@ blockquote-footer {
 
 .timeline-item {
     position: relative;
-    padding-left: 40px;
-    margin-bottom: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 15px;
-    width: 20px;
-    height: 20px;
-    background-color: #839dd7;
+    left: 30px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
+    border: 5px solid #fff; /* White border for clean design */
 }
 
 .timeline-content {
-    background-color:#839dd7;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Clean white background for readability */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern touch */
 }
 
 .timeline-content h3 {
     margin-top: 0;
-    font-size: 1.5rem;
-    color: #839dd7;
+    font-size: 2.3rem;
+    color: #000000; /* Darker text for better contrast */
+    font-weight: 600;
+}
+
+.timeline-content p {
+    font-size: 1.2rem;
+    color: #6c757d; /* Subtle gray for paragraph text */
+    line-height: 1.5;
 }
 
 /* Map Section */
 #map {
-    background-color: #839dd7;
+    background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -115,7 +121,7 @@ blockquote-footer {
 }
 
 .map-location {
-    background-color: #839dd7;
+    background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -127,7 +133,6 @@ blockquote-footer {
     height: 300px;
     margin-top: 10px;
 }
-
 
 /* Footer and copyright */
 footer {
@@ -142,7 +147,7 @@ footer p {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 786px) {
     h1 {
         font-size: 2rem;
     }
@@ -151,12 +156,16 @@ footer p {
         padding: 20px;
     }
 
+    .first-image img {
+        width: 120px;
+    }
+
     .timeline-item {
-        padding-left: 20px;
+        padding-left: 40px;
     }
 
     .timeline-item::before {
-        left: 10px;
+        left: 15px;
     }
 
     .map-container {
